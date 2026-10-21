@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Akshita Khurana. Strategic Program and Transformation Leader across AI, data, cloud and platform engineering.">
+<style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Akshita Khurana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap">
+<style>
+/* Layout concept: executive annual report. Hairline-ruled editorial bands, large serif numerals,
+   one deep red accent reserved for rules, flow connectors, suffixes and a few key words. */
+:root{
+  --bg:#F7F3EC;
+  --bg-2:#EFE9DE;
+  --surface:#FBF8F3;
+  --fg:#1C1A19;
+  --fg-2:#4A4541;
+  --muted:#6B645C;
+  --line:#DDD5C8;
+  --line-strong:#BDB3A3;
+  --accent:#A3152B;
+  --accent-soft:rgba(163,21,43,.09);
+  --btn-bg:#A3152B;
+  --btn-fg:#FFFFFF;
+  --inv-bg:#1E1A19;
+  --inv-fg:#F3EDE3;
+  --inv-fg-2:#C7BEB1;
+  --inv-line:rgba(243,237,227,.2);
+  --inv-accent:#F0697B;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#151312;--bg-2:#1B1817;--surface:#1F1B1A;--fg:#F1EBE1;--fg-2:#CBC2B5;--muted:#9C9185;
+    --line:#312D2A;--line-strong:#4B4540;--accent:#EE6577;--accent-soft:rgba(238,101,119,.12);
+    --btn-bg:#C2283D;--btn-fg:#FFFFFF;--inv-bg:#221E1C;--inv-fg:#F3EDE3;--inv-fg-2:#C7BEB1;
+    --inv-line:rgba(243,237,227,.18);--inv-accent:#F0697B;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#151312;--bg-2:#1B1817;--surface:#1F1B1A;--fg:#F1EBE1;--fg-2:#CBC2B5;--muted:#9C9185;
+  --line:#312D2A;--line-strong:#4B4540;--accent:#EE6577;--accent-soft:rgba(238,101,119,.12);
+  --btn-bg:#C2283D;--btn-fg:#FFFFFF;--inv-bg:#221E1C;--inv-fg:#F3EDE3;--inv-fg-2:#C7BEB1;
+  --inv-line:rgba(243,237,227,.18);--inv-accent:#F0697B;color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;text-align:left}
+ul{list-style:none;margin:0;padding:0}
+h1,h2,h3,p,dl,dd,dt,figure{margin:0}
+::selection{background:var(--accent-soft)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+section[id]{scroll-margin-top:96px}
+
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:700px){.wrap{padding-left:max(32px,env(safe-area-inset-left,0px));padding-right:max(32px,env(safe-area-inset-right,0px))}}
+.section{padding-block:clamp(56px,8vw,104px)}
+.alt{background:var(--bg-2)}
+
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor;flex:none}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,4.6vw,3.6rem);line-height:1.08;letter-spacing:-.02em;text-wrap:balance;max-width:20ch}
+.sec-head{display:grid;gap:16px;margin-bottom:clamp(32px,5vw,56px)}
+.u{color:var(--accent)}
+.tagline{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+
+/* header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 93%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-row{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:64px}
+.brand{font-family:var(--serif);font-size:1.3rem;letter-spacing:-.01em;white-space:nowrap}
+.nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;min-width:0}
+.nav::-webkit-scrollbar{display:none}
+.nav a{position:relative;padding:8px 12px;font-size:.875rem;font-weight:500;color:var(--fg-2);white-space:nowrap;transition:color .25s}
+.nav a::after{content:"";position:absolute;left:12px;right:12px;bottom:3px;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.nav a:hover,.nav a[aria-current="true"]{color:var(--fg)}
+.nav a[aria-current="true"]::after{transform:scaleX(1)}
+@media (max-width:860px){
+  .nav-row{flex-direction:column;align-items:flex-start;gap:0;padding-top:12px}
+  .nav{width:calc(100% + 12px);margin-left:-12px}
+}
+
+/* hero */
+.hero{padding-top:clamp(48px,8vw,104px)}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.7rem,6.8vw,6.1rem);line-height:1.02;letter-spacing:-.03em;margin-top:26px;max-width:17ch;text-wrap:balance}
+.hero h1 em{font-style:italic;color:var(--accent);font-weight:400}
+.hero-lede{margin-top:clamp(20px,3vw,30px);font-size:clamp(1.1rem,1.8vw,1.35rem);line-height:1.5;color:var(--fg-2);max-width:42ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(24px,4vw,40px)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border:1px solid var(--line-strong);border-radius:2px;font-size:.95rem;font-weight:600;transition:background .25s,border-color .25s,color .25s}
+.btn .arr{transition:transform .3s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+.btn:hover{border-color:var(--fg)}
+.btn-primary{background:var(--btn-bg);color:var(--btn-fg);border-color:var(--btn-bg)}
+.btn-primary:hover{border-color:var(--btn-bg);filter:brightness(1.08)}
+.chain{display:flex;flex-wrap:wrap;gap:6px 0;margin-top:clamp(36px,5vw,60px);font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.chain li{display:flex;align-items:center}
+.chain li+li::before{content:"\2192";color:var(--accent);margin:0 12px;font-size:.95rem;letter-spacing:0}
+.hero-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 32px;margin-top:20px}
+.hm{padding-top:22px;border-top:1px solid var(--line-strong)}
+.hm .lab{margin-top:10px;font-size:.9rem;color:var(--fg-2);max-width:22ch;line-height:1.35}
+.num{display:block;font-family:var(--serif);font-weight:400;line-height:1;letter-spacing:-.03em;font-variant-numeric:lining-nums tabular-nums}
+.hm .num{font-size:clamp(2.4rem,4.8vw,4rem)}
+@media (max-width:700px){.hero-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 20px}}
+.scroll-cue{display:inline-flex;align-items:center;gap:14px;margin:clamp(32px,5vw,52px) 0;font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.scroll-cue i{position:relative;display:block;width:1px;height:44px;background:var(--line-strong);overflow:hidden}
+.scroll-cue i::after{content:"";position:absolute;left:0;top:-16px;width:1px;height:16px;background:var(--accent);animation:cue 2.2s var(--ease) infinite}
+@keyframes cue{to{transform:translateY(64px)}}
+
+/* flow */
+.flow{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:20px}
+.node{position:relative;padding-top:16px;border-top:1px solid var(--line-strong)}
+.node::before{content:"";position:absolute;top:-1px;left:0;right:0;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease);transition-delay:calc(var(--i) * .16s)}
+.flow.in .node::before{transform:scaleX(1)}
+.node b{display:block;font-family:var(--serif);font-weight:400;font-size:1.4rem;line-height:1.15;letter-spacing:-.01em}
+.node span{display:block;margin-top:6px;font-size:.85rem;color:var(--muted);line-height:1.4}
+@media (max-width:760px){.flow{gap:6px}.node{padding-top:12px}.node b{font-size:.78rem;letter-spacing:-.01em}.flow[style*="--n:6"] .node b{font-size:.68rem}.node span{font-size:.7rem}}
+
+/* transformations */
+.tx-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px 28px}
+.tx{padding-top:20px;border-top:1px solid var(--line-strong)}
+.tx .num{font-size:clamp(3.2rem,5.6vw,5rem);margin-top:16px}
+.tx p.cap{margin-top:12px;color:var(--fg-2);max-width:20ch;line-height:1.35}
+.tx-flow{margin-top:clamp(40px,6vw,64px)}
+@media (max-width:900px){.tx-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* impact */
+.band{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:20px 48px;padding-block:clamp(26px,4vw,40px);border-top:1px solid var(--line-strong)}
+.band:last-of-type{border-bottom:1px solid var(--line-strong)}
+.band-label h3{font-family:var(--serif);font-weight:400;font-size:1.7rem;line-height:1.1;letter-spacing:-.01em}
+.band-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:28px 28px}
+.metric .num{font-size:clamp(2.8rem,5.4vw,4.4rem)}
+.metric .lab{margin-top:10px;font-size:.95rem;color:var(--fg-2);max-width:22ch;line-height:1.35}
+@media (max-width:820px){.band{grid-template-columns:1fr}}
+
+/* stories */
+.story{border-top:1px solid var(--line-strong);padding-block:clamp(24px,3.4vw,36px)}
+.story:last-child{border-bottom:1px solid var(--line-strong)}
+.story h3{margin-top:12px}
+.story-toggle{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:24px;width:100%;font-family:var(--serif);font-weight:400;font-size:clamp(1.7rem,3.4vw,2.6rem);line-height:1.1;letter-spacing:-.02em;text-wrap:balance}
+.story-toggle:hover .plus{border-color:var(--accent)}
+.plus{position:relative;width:38px;height:38px;border:1px solid var(--line-strong);border-radius:50%;flex:none;margin-top:6px;transition:border-color .25s}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:var(--fg);transform:translate(-50%,-50%)}
+.plus::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .35s var(--ease)}
+.story.open .plus::after{transform:translate(-50%,-50%) rotate(0deg)}
+.kpis{display:flex;flex-wrap:wrap;gap:16px 40px;margin-top:20px}
+.kpis .num{font-size:clamp(1.9rem,3vw,2.6rem)}
+.kpis .lab{margin-top:6px;font-size:.85rem;color:var(--muted);line-height:1.3}
+.story-body{display:grid;grid-template-rows:0fr;visibility:hidden;transition:grid-template-rows .6s var(--ease),visibility 0s linear .6s}
+.story.open .story-body{grid-template-rows:1fr;visibility:visible;transition:grid-template-rows .6s var(--ease),visibility 0s}
+.story-inner{min-height:0;overflow:hidden}
+.story-pad{padding-top:clamp(22px,3vw,32px)}
+.qa{margin-bottom:clamp(24px,4vw,36px)}
+.qa div{display:grid;grid-template-columns:minmax(0,140px) minmax(0,1fr);gap:8px 32px;padding-block:14px;border-top:1px solid var(--line)}
+.qa dt{font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);padding-top:4px}
+.qa dd{font-size:1.15rem;line-height:1.4;max-width:54ch}
+@media (max-width:700px){.qa div{grid-template-columns:1fr}}
+
+/* AI assistants */
+.assist{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,48px);align-items:stretch}
+.card{padding:clamp(22px,3vw,34px);background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
+.card h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.1;letter-spacing:-.015em}
+.card p{color:var(--fg-2);max-width:46ch}
+.card .flow{margin-top:auto;padding-top:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips li{padding:7px 14px;border:1px solid var(--line-strong);border-radius:999px;font-size:.9rem;font-weight:500}
+@media (max-width:860px){.assist{grid-template-columns:1fr}}
+
+/* use cases */
+.uc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 28px}
+.uc-grid li{padding:20px 0 26px;border-top:1px solid var(--line-strong)}
+.uc-grid h3{font-family:var(--serif);font-weight:400;font-size:1.35rem;line-height:1.15;letter-spacing:-.01em;transition:color .3s}
+.uc-grid p{margin-top:8px;font-size:.95rem;color:var(--fg-2);line-height:1.4}
+.uc-grid li:hover h3{color:var(--accent)}
+.uc-cta{margin-top:clamp(28px,4vw,44px);font-family:var(--serif);font-style:italic;font-size:clamp(1.4rem,2.8vw,2rem);letter-spacing:-.01em}
+.uc-cta a{color:var(--accent);border-bottom:1px solid currentColor}
+@media (max-width:1000px){.uc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.uc-grid{grid-template-columns:1fr}}
+
+/* principles */
+.principles li{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:8px 48px;align-items:baseline;padding-block:22px;border-top:1px solid var(--line-strong)}
+.principles li:last-child{border-bottom:1px solid var(--line-strong)}
+.principles h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,2.8vw,2.3rem);line-height:1.1;letter-spacing:-.015em;transition:color .3s}
+.principles p{color:var(--fg-2)}
+.principles li:hover h3{color:var(--accent)}
+@media (max-width:760px){.principles li{grid-template-columns:1fr}}
+
+/* range */
+.range{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,6vw,72px);align-items:start}
+.range-list li{border-top:1px solid var(--line-strong)}
+.range-list li:last-child{border-bottom:1px solid var(--line-strong)}
+.range-list button{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;padding-block:18px;font-family:var(--serif);font-size:clamp(1.5rem,2.8vw,2.2rem);line-height:1.15;letter-spacing:-.015em;color:var(--muted);transition:color .3s,padding-left .35s var(--ease)}
+.range-list button::after{content:"\2192";font-family:var(--sans);font-size:1.1rem;color:var(--accent);opacity:0;transform:translateX(-8px);transition:opacity .3s,transform .35s var(--ease)}
+.range-list button:hover,.range-list button[aria-selected="true"]{color:var(--fg)}
+.range-list button[aria-selected="true"]{padding-left:12px}
+.range-list button[aria-selected="true"]::after{opacity:1;transform:none}
+.range-panel{position:sticky;top:112px;padding:clamp(22px,3vw,32px);background:var(--surface);border:1px solid var(--line)}
+.range-panel h3{font-family:var(--serif);font-weight:400;font-size:1.6rem;line-height:1.15;letter-spacing:-.01em;margin:10px 0 10px}
+.range-panel p{color:var(--fg-2)}
+@media (max-width:860px){.range{grid-template-columns:1fr}.range-panel{position:static}}
+
+/* notebook */
+.notebook{position:relative;background:var(--surface);border:1px solid var(--line);padding:clamp(8px,1vw,12px) clamp(20px,5vw,64px) clamp(8px,1vw,12px) clamp(52px,9vw,120px)}
+.notebook::before{content:"";position:absolute;left:clamp(34px,6vw,84px);top:0;bottom:0;width:1px;background:var(--accent);opacity:.6}
+.q{padding-block:22px;border-bottom:1px solid var(--line)}
+.q:last-child{border-bottom:0}
+.q p{font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,2.6vw,1.9rem);line-height:1.25;letter-spacing:-.01em;max-width:32ch}
+
+/* about + beyond */
+.about-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,7vw,88px);align-items:start}
+.about-lead{font-family:var(--serif);font-weight:400;font-size:clamp(1.8rem,3.6vw,3rem);line-height:1.13;letter-spacing:-.02em;text-wrap:balance}
+.about-body{display:grid;gap:14px;color:var(--fg-2)}
+.creds{margin-top:14px;padding-top:18px;border-top:1px solid var(--line);display:grid;gap:4px;font-size:.92rem;color:var(--muted)}
+.creds strong{color:var(--fg);font-weight:600}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr}}
+.beyond-statement{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,4.2vw,3.4rem);line-height:1.12;letter-spacing:-.02em;max-width:22ch;text-wrap:balance}
+.beyond-statement em{font-style:italic;color:var(--accent)}
+.beyond-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 40px;margin-top:clamp(32px,5vw,52px)}
+.beyond-list li{padding-top:18px;border-top:1px solid var(--line-strong)}
+.beyond-list h3{font-family:var(--serif);font-weight:400;font-size:1.4rem;line-height:1.15}
+.beyond-list p{margin-top:6px;color:var(--fg-2)}
+@media (max-width:760px){.beyond-list{grid-template-columns:1fr;gap:24px}}
+
+/* timeline */
+.timeline{position:relative}
+.timeline::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1px;background:var(--line-strong)}
+.timeline::after{content:"";position:absolute;left:4px;top:8px;width:3px;height:calc((100% - 16px) * var(--pn,0));background:var(--accent);transition:height .2s linear}
+.t-item{position:relative;display:grid;grid-template-columns:minmax(0,3fr) minmax(0,8fr);gap:10px 48px;padding:0 0 clamp(28px,4vw,44px) clamp(28px,4vw,44px)}
+.t-item:last-child{padding-bottom:0}
+.t-item::before{content:"";position:absolute;left:0;top:8px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:1px solid var(--line-strong);transition:background .4s,border-color .4s,transform .4s var(--ease)}
+.t-item.reached::before{background:var(--accent);border-color:var(--accent);transform:scale(1.15)}
+.t-co{font-family:var(--serif);font-size:1.35rem;line-height:1.2;letter-spacing:-.01em}
+.t-when{margin-top:6px;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.t-main .t-co{font-size:clamp(1.6rem,2.6vw,2.1rem)}
+.t-main .t-when{color:var(--accent)}
+.t-role{font-size:1.05rem;font-weight:600}
+.t-main .t-role{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,2.4vw,2rem);letter-spacing:-.015em}
+.t-mandate{margin-top:6px;color:var(--fg-2);max-width:56ch}
+.t-out{margin-top:14px;display:grid;gap:6px}
+.t-out li{position:relative;padding-left:22px;max-width:60ch}
+.t-out li::before{content:"";position:absolute;left:0;top:.72em;width:12px;height:1px;background:var(--accent)}
+.t-more{margin-top:14px;display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:var(--fg-2);border-bottom:1px solid var(--line-strong);padding-bottom:2px}
+.t-more:hover{color:var(--accent);border-color:var(--accent)}
+.t-more i{display:inline-block;transition:transform .3s var(--ease);font-style:normal}
+.t-more[aria-expanded="true"] i{transform:rotate(45deg)}
+.t-detail{display:grid;grid-template-rows:0fr;visibility:hidden;transition:grid-template-rows .5s var(--ease),visibility 0s linear .5s}
+.t-detail.open{grid-template-rows:1fr;visibility:visible;transition:grid-template-rows .5s var(--ease),visibility 0s}
+.t-detail>div{min-height:0;overflow:hidden}
+.t-detail p{margin-top:12px;color:var(--fg-2);max-width:60ch;font-size:.97rem}
+@media (max-width:760px){.t-item{grid-template-columns:1fr}}
+
+/* final CTA */
+.inv{background:var(--inv-bg);color:var(--inv-fg);--fg:var(--inv-fg);--fg-2:var(--inv-fg-2);--muted:var(--inv-fg-2);--line-strong:var(--inv-line);--accent:var(--inv-accent)}
+.inv h2{max-width:14ch;font-size:clamp(2.4rem,6vw,5rem)}
+.inv h2 em{font-style:italic;color:var(--inv-accent)}
+.inv .lede{margin-top:22px;font-size:clamp(1.1rem,1.6vw,1.3rem);color:var(--inv-fg-2);max-width:40ch}
+.inv .btn{border-color:var(--inv-line);color:var(--inv-fg)}
+.inv .btn:hover{border-color:var(--inv-fg)}
+.inv .btn-primary{background:var(--btn-bg);border-color:var(--btn-bg);color:var(--btn-fg)}
+.inv .btn-primary:hover{border-color:var(--btn-bg)}
+.email-line{margin-top:22px;font-family:var(--serif);font-size:clamp(1.4rem,3vw,2rem);letter-spacing:-.01em;color:var(--inv-fg-2);overflow-wrap:anywhere}
+.email-line span{color:var(--inv-fg);user-select:all}
+.foot{margin-top:clamp(48px,7vw,80px);padding-top:18px;border-top:1px solid var(--inv-line);font-size:.82rem;color:var(--inv-fg-2)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;transition-delay:0s!important;animation:none!important}
+  .node::before{transform:scaleX(1)}
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a class="brand" href="#home">Akshita Khurana</a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#impact">Impact</a>
+      <a href="#stories">Leadership Stories</a>
+      <a href="#about">About</a>
+      <a href="#beyond">Beyond Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <p class="eyebrow">Strategic Program &amp; Transformation Leader</p>
+    <h1>Turning enterprise strategy into transformation that <em>scales.</em></h1>
+    <p class="hero-lede">I have transformed AI, data, cloud and engineering platforms. I turn executive priorities into roadmaps, teams and measurable results.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#impact">Explore my impact <span class="arr" aria-hidden="true">&rarr;</span></a>
+      <a class="btn" href="#contact">Email me</a>
+    </div>
+    <ul class="chain" aria-label="Leadership themes">
+      <li>Strategy</li><li>Portfolio</li><li>Execution</li><li>Governance</li><li>Transformation</li><li>Outcomes</li>
+    </ul>
+    <div class="hero-metrics">
+      <div class="hm"><b class="num"><span class="n" data-to="12">12</span><span class="u">+</span></b><p class="lab">Years of enterprise transformation</p></div>
+      <div class="hm"><b class="num"><span class="u">$</span><span class="n" data-to="15">15</span><span class="u">M</span></b><p class="lab">AI portfolio scale</p></div>
+      <div class="hm"><b class="num"><span class="n" data-to="35">35</span></b><p class="lab">Production AI use cases</p></div>
+      <div class="hm"><b class="num"><span class="n" data-to="10">10</span><span class="u">K+</span></b><p class="lab">Users reached through enterprise AI</p></div>
+    </div>
+    <a class="scroll-cue" href="#value" aria-label="Scroll to the next section"><i></i>Scroll</a>
+  </div>
+</section>
+
+<!-- TRANSFORMATIONS -->
+<section class="section alt" id="value">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Transformation</p>
+      <h2>AI. Data. Cloud. Platforms.</h2>
+    </div>
+    <div class="tx-grid">
+      <div class="tx"><p class="tagline">AI</p><b class="num"><span class="n" data-to="35">35</span></b><p class="cap">use cases in production</p></div>
+      <div class="tx"><p class="tagline">Data</p><b class="num"><span class="n" data-to="250">250</span><span class="u">+</span></b><p class="cap">data scientists enabled</p></div>
+      <div class="tx"><p class="tagline">Cloud</p><b class="num"><span class="u">~</span><span class="n" data-to="4">4</span><span class="u"> hrs</span></b><p class="cap">multi-region recovery target</p></div>
+      <div class="tx"><p class="tagline">Platform engineering</p><b class="num"><span class="u">+</span><span class="n" data-to="50">50</span><span class="u">%</span></b><p class="cap">faster deployments</p></div>
+    </div>
+    <div class="flow tx-flow" style="--n:4" data-flow>
+      <div class="node" style="--i:0"><b>Strategy</b></div>
+      <div class="node" style="--i:1"><b>Operating Model</b></div>
+      <div class="node" style="--i:2"><b>Execution</b></div>
+      <div class="node" style="--i:3"><b>Outcomes</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="section" id="impact">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Impact at scale</p>
+      <h2>Numbers that matter.</h2>
+    </div>
+    <div class="band">
+      <div class="band-label"><h3>Scale</h3></div>
+      <div class="band-metrics">
+        <div class="metric"><b class="num"><span class="u">~$</span><span class="n" data-to="15">15</span><span class="u">M</span></b><p class="lab">AI program investment</p></div>
+        <div class="metric"><b class="num"><span class="n" data-to="164">164</span></b><p class="lab">GenAI capabilities in one portfolio</p></div>
+        <div class="metric"><b class="num"><span class="n" data-to="10">10</span><span class="u">K+</span></b><p class="lab">Enterprise AI users</p></div>
+      </div>
+    </div>
+    <div class="band">
+      <div class="band-label"><h3>Teams</h3></div>
+      <div class="band-metrics">
+        <div class="metric"><b class="num"><span class="n" data-to="5">5</span><span class="u">+</span></b><p class="lab">Program managers</p></div>
+        <div class="metric"><b class="num"><span class="n" data-to="30">30</span><span class="u">+</span></b><p class="lab">Engineers</p></div>
+        <div class="metric"><b class="num"><span class="n" data-to="10">10</span><span class="u">+</span></b><p class="lab">Workstreams</p></div>
+      </div>
+    </div>
+    <div class="band">
+      <div class="band-label"><h3>Results</h3></div>
+      <div class="band-metrics">
+        <div class="metric"><b class="num"><span class="u">+</span><span class="n" data-to="20">20</span><span class="u">%</span></b><p class="lab">Delivery throughput</p></div>
+        <div class="metric"><b class="num"><span class="n">3 to 4</span><span class="u">&times;</span></b><p class="lab">Faster time to market</p></div>
+        <div class="metric"><b class="num"><span class="n" data-to="50">50</span><span class="u">%+</span></b><p class="lab">Less manual review backlog</p></div>
+        <div class="metric"><b class="num"><span class="u">$</span><span class="n" data-to="798">798</span><span class="u">K</span></b><p class="lab">Savings identified or delivered</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP STORIES -->
+<section class="section alt" id="stories">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Leadership Stories</p>
+      <h2>Four problems I took from messy to done.</h2>
+    </div>
+
+    <article class="story open">
+      <p class="tagline">AI transformation</p>
+      <h3><button class="story-toggle" aria-expanded="true" aria-controls="sb-ai"><span>From AI experiments to an enterprise capability</span><i class="plus" aria-hidden="true"></i></button></h3>
+      <ul class="kpis">
+        <li><b class="num"><span class="n" data-to="35">35</span></b><p class="lab">use cases live</p></li>
+        <li><b class="num"><span class="n" data-to="164">164</span></b><p class="lab">capabilities managed</p></li>
+        <li><b class="num"><span class="n" data-to="10">10</span><span class="u">K+</span></b><p class="lab">users</p></li>
+      </ul>
+      <div class="story-body" id="sb-ai"><div class="story-inner"><div class="story-pad">
+        <dl class="qa">
+          <div><dt>Stake</dt><dd>AI work was scattered across teams.</dd></div>
+          <div><dt>Move</dt><dd>One portfolio, one roadmap, one operating rhythm across four tracks.</dd></div>
+          <div><dt>Result</dt><dd>35 use cases live, 10K+ users, about $15M managed.</dd></div>
+        </dl>
+        <div class="flow" style="--n:5" data-flow>
+          <div class="node" style="--i:0"><b>Strategy</b></div>
+          <div class="node" style="--i:1"><b>Portfolio</b></div>
+          <div class="node" style="--i:2"><b>Platform</b></div>
+          <div class="node" style="--i:3"><b>Adoption</b></div>
+          <div class="node" style="--i:4"><b>Value</b></div>
+        </div>
+      </div></div></div>
+    </article>
+
+    <article class="story">
+      <p class="tagline">Cloud transformation</p>
+      <h3><button class="story-toggle" aria-expanded="false" aria-controls="sb-cloud"><span>Turning resilience into an enterprise program</span><i class="plus" aria-hidden="true"></i></button></h3>
+      <ul class="kpis">
+        <li><b class="num"><span class="u">~</span><span class="n" data-to="4">4</span><span class="u"> hrs</span></b><p class="lab">recovery target</p></li>
+        <li><b class="num"><span class="u">&le;</span><span class="n" data-to="15">15</span><span class="u"> min</span></b><p class="lab">RPO target</p></li>
+        <li><b class="num"><span class="n" data-to="3">3</span></b><p class="lab">proofs of concept</p></li>
+      </ul>
+      <div class="story-body" id="sb-cloud"><div class="story-inner"><div class="story-pad">
+        <dl class="qa">
+          <div><dt>Stake</dt><dd>A regional outage could stop critical services.</dd></div>
+          <div><dt>Move</dt><dd>Phased proofs of concept across AWS, Databricks and Snowflake, with targets set first.</dd></div>
+          <div><dt>Result</dt><dd>A governed multi-region roadmap leadership could fund and trust.</dd></div>
+        </dl>
+        <div class="flow" style="--n:5" data-flow>
+          <div class="node" style="--i:0"><b>Risk</b></div>
+          <div class="node" style="--i:1"><b>Targets</b></div>
+          <div class="node" style="--i:2"><b>Validation</b></div>
+          <div class="node" style="--i:3"><b>Decisions</b></div>
+          <div class="node" style="--i:4"><b>Roadmap</b></div>
+        </div>
+      </div></div></div>
+    </article>
+
+    <article class="story">
+      <p class="tagline">Data and platform engineering</p>
+      <h3><button class="story-toggle" aria-expanded="false" aria-controls="sb-plat"><span>Modernizing the platform behind AI and data</span><i class="plus" aria-hidden="true"></i></button></h3>
+      <ul class="kpis">
+        <li><b class="num"><span class="n" data-to="250">250</span><span class="u">+</span></b><p class="lab">data scientists</p></li>
+        <li><b class="num"><span class="u">+</span><span class="n" data-to="50">50</span><span class="u">%</span></b><p class="lab">deployment speed</p></li>
+        <li><b class="num"><span class="n">3 to 4</span><span class="u">&times;</span></b><p class="lab">faster to market</p></li>
+      </ul>
+      <div class="story-body" id="sb-plat"><div class="story-inner"><div class="story-pad">
+        <dl class="qa">
+          <div><dt>Stake</dt><dd>250+ data scientists needed faster, simpler delivery.</dd></div>
+          <div><dt>Move</dt><dd>Staged modernization of the platform and DevOps, with users and engineers on one plan.</dd></div>
+          <div><dt>Result</dt><dd>Deployments 50% faster. Time to market 3 to 4 times faster.</dd></div>
+        </dl>
+        <div class="flow" style="--n:5" data-flow>
+          <div class="node" style="--i:0"><b>Need</b></div>
+          <div class="node" style="--i:1"><b>Migration plan</b></div>
+          <div class="node" style="--i:2"><b>Platform</b></div>
+          <div class="node" style="--i:3"><b>Adoption</b></div>
+          <div class="node" style="--i:4"><b>Speed</b></div>
+        </div>
+      </div></div></div>
+    </article>
+
+    <article class="story">
+      <p class="tagline">Operating model</p>
+      <h3><button class="story-toggle" aria-expanded="false" aria-controls="sb-gov"><span>Building the system behind predictable delivery</span><i class="plus" aria-hidden="true"></i></button></h3>
+      <ul class="kpis">
+        <li><b class="num"><span class="u">+</span><span class="n" data-to="20">20</span><span class="u">%</span></b><p class="lab">throughput</p></li>
+        <li><b class="num"><span class="n" data-to="10">10</span><span class="u">+</span></b><p class="lab">workstreams</p></li>
+        <li><b class="num"><span class="n" data-to="30">30</span><span class="u">+</span></b><p class="lab">engineers</p></li>
+      </ul>
+      <div class="story-body" id="sb-gov"><div class="story-inner"><div class="story-pad">
+        <dl class="qa">
+          <div><dt>Stake</dt><dd>Priorities, capacity and funding were never seen together.</dd></div>
+          <div><dt>Move</dt><dd>Integrated roadmaps, capacity and financial tracking, one executive cadence.</dd></div>
+          <div><dt>Result</dt><dd>20% more throughput. Leaders decide earlier, with better information.</dd></div>
+        </dl>
+        <div class="flow" style="--n:6" data-flow>
+          <div class="node" style="--i:0"><b>Demand</b></div>
+          <div class="node" style="--i:1"><b>Priorities</b></div>
+          <div class="node" style="--i:2"><b>Capacity</b></div>
+          <div class="node" style="--i:3"><b>Investment</b></div>
+          <div class="node" style="--i:4"><b>Delivery</b></div>
+          <div class="node" style="--i:5"><b>Outcomes</b></div>
+        </div>
+      </div></div></div>
+    </article>
+  </div>
+</section>
+
+<!-- AI USE CASES -->
+<section class="section" id="assistants">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">AI use cases</p>
+      <h2>AI that people actually use.</h2>
+    </div>
+    <ul class="uc-grid">
+      <li><h3>Enterprise GenAI Assistant</h3><p>Knowledge, drafting and summaries for employees. Scaled to 10K+ users.</p></li>
+      <li><h3>Document Intelligence</h3><p>Review, extraction and summaries for high volume documents.</p></li>
+      <li><h3>Claims / Operations Copilot</h3><p>Case history summaries and faster answers for frontline teams.</p></li>
+      <li><h3>Underwriting / Risk Knowledge Assistant</h3><p>RAG assistant for policy, guideline and risk answers from trusted sources.</p></li>
+      <li><h3>Agentic Workflow Automation</h3><p>Multi step AI workflows that retrieve information and take action across systems.</p></li>
+      <li><h3>AI Developer Productivity</h3><p>Coding, code review and backlog help for faster delivery.</p></li>
+      <li><h3>AI Search &amp; Knowledge Discovery</h3><p>Semantic search across scattered content, with governed access.</p></li>
+      <li><h3>Customer / Employee Service Assistant</h3><p>Conversational help that guides people and cuts repeat inquiries.</p></li>
+    </ul>
+    <p class="uc-cta">Curious how I delivered these? <a href="#contact">Message me.</a></p>
+  </div>
+</section>
+
+<!-- HOW I LEAD -->
+<section class="section alt" id="lead">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Leadership principles</p>
+      <h2>How I lead transformation</h2>
+    </div>
+    <ul class="principles">
+      <li><h3>Create clarity from ambiguity</h3><p>Decisions, owners, sequence, outcomes.</p></li>
+      <li><h3>Lead two steps ahead</h3><p>Spot risk early through capacity, dependencies and cost.</p></li>
+      <li><h3>Connect strategy to execution</h3><p>Keep teams on the business goal.</p></li>
+      <li><h3>Challenge constructively</h3><p>Raise hard things early, with options.</p></li>
+      <li><h3>Build systems, not heroics</h3><p>Repeatable beats heroic.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- DECISIONS -->
+<section class="section" id="decisions">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Judgment</p>
+      <h2>The decisions behind the delivery</h2>
+    </div>
+    <div class="notebook">
+      <div class="q"><p>What should we invest in, and what should wait?</p></div>
+      <div class="q"><p>Where does capacity constrain strategy?</p></div>
+      <div class="q"><p>Which risks need a leadership decision now?</p></div>
+      <div class="q"><p>How do we scale adoption, not just launch technology?</p></div>
+      <div class="q"><p>Which metrics show that transformation created value?</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section alt" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <p class="eyebrow" style="margin-bottom:20px">About</p>
+        <p class="about-lead">I’m a technology transformation leader with 12+ years working where strategy, technology and change meet.</p>
+      </div>
+      <div class="about-body">
+        <p>AI, data, cloud, platform engineering. I move easily between executive strategy and delivery detail, so strategy keeps shipping.</p>
+        <div class="creds">
+          <p><strong>Master of Management Sciences</strong>, University of Waterloo</p>
+          <p>PMP &middot; PSM &middot; PSPO &middot; SAFe POPM</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEYOND -->
+<section class="section" id="beyond">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:22px">Leadership beyond delivery</p>
+    <p class="beyond-statement">I care as much about building capability around me as I do about <em>delivering the work itself.</em></p>
+    <ul class="beyond-list">
+      <li><h3>Women in Agile</h3><p>Volunteer board member.</p></li>
+      <li><h3>Mentorship program</h3><p>Founded it. Still mentoring.</p></li>
+      <li><h3>Leading without authority</h3><p>Influence through clarity and trust.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section inv" id="contact">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:26px">Contact</p>
+    <h2>Ready for the next scale of <em>impact.</em></h2>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=a9khuran%40uwaterloo.ca&amp;su=Hello%20Akshita" target="_blank" rel="noopener">Email with Gmail <span class="arr" aria-hidden="true">&rarr;</span></a>
+      <a class="btn btn-primary" href="https://outlook.office.com/mail/deeplink/compose?to=a9khuran%40uwaterloo.ca&amp;subject=Hello%20Akshita" target="_blank" rel="noopener">Email with Outlook <span class="arr" aria-hidden="true">&rarr;</span></a>
+      <button class="btn" type="button" id="copyBtn">Copy email address</button>
+      <a class="btn" id="liBtn" href="#" target="_blank" rel="noopener" hidden>Connect on LinkedIn</a>
+    </div>
+    <p class="email-line"><span id="emText">a9khuran@uwaterloo.ca</span></p>
+    <p class="foot">&copy; 2026 Akshita Khurana</p>
+  </div>
+</section>
+
+</main>
+
+<script>
+(function(){
+  var CONFIG = { linkedin: "" };
+  var EMAIL = "a9khuran@uwaterloo.ca";
+
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var $ = function(s, r){ return (r||document).querySelector(s); };
+  var $$ = function(s, r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); };
+
+  if (CONFIG.linkedin) { var li = $("#liBtn"); li.href = CONFIG.linkedin; li.hidden = false; }
+
+  /* copy email */
+  var copyBtn = $("#copyBtn");
+  copyBtn.addEventListener("click", function(){
+    function done(){ copyBtn.textContent = "Copied"; setTimeout(function(){ copyBtn.textContent = "Copy email address"; }, 1800); }
+    function fallback(){
+      var r = document.createRange(); r.selectNodeContents($("#emText"));
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(EMAIL).then(done, fallback);
+      } else { fallback(); }
+    } catch (e) { fallback(); }
+  });
+
+  /* smooth in-page navigation */
+  $$("a[href^='#']").forEach(function(a){
+    a.addEventListener("click", function(e){
+      var id = a.getAttribute("href");
+      if (!id || id.length < 2) return;
+      var t = $(id); if (!t) return;
+      e.preventDefault();
+      t.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    });
+  });
+
+  /* active nav */
+  var sectionToNav = { home:"home", value:"home", impact:"impact", stories:"stories", assistants:"stories", lead:"stories", decisions:"stories", about:"about", beyond:"beyond", contact:"contact" };
+  var navLinks = $$("#nav a");
+  var nav = $("#nav");
+  function setActive(key){
+    navLinks.forEach(function(l){
+      var on = l.getAttribute("href") === "#" + key;
+      if (on) l.setAttribute("aria-current","true"); else l.removeAttribute("aria-current");
+      if (on && nav.scrollWidth > nav.clientWidth) {
+        nav.scrollTo({ left: l.offsetLeft - nav.clientWidth/2 + l.offsetWidth/2, behavior: reduce ? "auto" : "smooth" });
+      }
+    });
+  }
+  setActive("home");
+  if ("IntersectionObserver" in window) {
+    var navIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting) setActive(sectionToNav[en.target.id]); });
+    }, { rootMargin: "-35% 0px -60% 0px" });
+    Object.keys(sectionToNav).forEach(function(id){ var s = document.getElementById(id); if (s) navIO.observe(s); });
+  }
+
+  /* count up */
+  function countUp(el){
+    var to = parseFloat(el.getAttribute("data-to"));
+    if (isNaN(to)) return;
+    var dur = 1100, t0 = performance.now();
+    function step(now){
+      var p = Math.min(1, (now - t0) / dur);
+      var e = 1 - Math.pow(1 - p, 3);
+      el.textContent = String(Math.round(to * e));
+      if (p < 1) requestAnimationFrame(step); else el.textContent = String(to);
+    }
+    el.textContent = "0";
+    requestAnimationFrame(step);
+  }
+  if (!reduce && "IntersectionObserver" in window) {
+    var cIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) { cIO.unobserve(en.target); countUp(en.target); }
+      });
+    }, { threshold: 0.6 });
+    $$(".n[data-to]").forEach(function(n){ cIO.observe(n); });
+  }
+
+  /* flow reveal */
+  var flows = $$("[data-flow]");
+  if ("IntersectionObserver" in window && !reduce) {
+    var fIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add("in"); fIO.unobserve(en.target); } });
+    }, { threshold: 0.35 });
+    flows.forEach(function(f){ fIO.observe(f); });
+  } else {
+    flows.forEach(function(f){ f.classList.add("in"); });
+  }
+
+  /* story cards */
+  $$(".story-toggle").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var story = btn.closest(".story");
+      var open = story.classList.toggle("open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
